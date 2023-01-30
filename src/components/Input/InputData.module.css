@@ -1,0 +1,83 @@
+.inputTaskArea {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  max-width: 50rem;
+  max-height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: #0ebef3;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.inputText {
+  width: 30rem;
+  border: none;
+  border-radius: 10px;
+  background-color: aquamarine;
+  padding: 1rem;
+  border-bottom: 2px solid rgb(104, 103, 103);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  font-size: 1.5rem;
+}
+.inputText:focus {
+  outline: none;
+  border: none;
+  transition-duration: 0.3s;
+  border-bottom: 2px solid #681b68;
+  box-shadow: rgba(7, 195, 228, 0.5) 0px 10px 15px -3px,
+    rgba(10, 153, 248, 0.5) 0px 4px 6px -2px;
+}
+
+.btn {
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 4px;
+  position: relative;
+  background-color: #16a085;
+  border: none;
+  color: #fff;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  box-shadow: 0 5px 15px #193047;
+  border-radius: 20px;
+  margin-left: 3rem;
+}
+
+.btn:hover {
+  background: rgb(167, 238, 226);
+  box-shadow: 0px 2px 10px 5px #1abc9c;
+  color: rgb(8, 8, 8);
+}
+
+.btn:after {
+  content: "";
+  background: #1abc9c;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.btn:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.btn:focus {
+  outline: 0;
+}
